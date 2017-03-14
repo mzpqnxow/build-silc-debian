@@ -48,6 +48,7 @@ $ ./configure --prefix=/opt/silc-1.1.8 --disable-ipv6 \
   LDFLAGS='-z relro -z now'
 $ make -j
 $ sudo make install
+```
 
 ## Configure the silc client
 
