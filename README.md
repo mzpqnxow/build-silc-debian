@@ -56,6 +56,8 @@ $ sudo make install
 $ cd
 $ mkdir -p .silc/
 $ cp silc-client-conf/silc.conf ~/.silc
+$ echo 'export PATH=$PATH:/opt/silc-1.1.8/bin' >> ~/.bashrc
+$ source ~/.bashrc
 ```
 
 Make edits to ~/.silc/silc.conf where there are 'XXXXXX'
@@ -73,3 +75,26 @@ You can also feel free to change the encryption settings, but this is meant for 
 ## Making an init script
 
 This is pretty boilerplate, I'm not including one
+
+## Running for the first time
+
+You might encounter some errors, check the logs after running silcd for the first time via:
+
+```
+$ sudo /opt/silc-1.1.18/sbin/silcd -f /opt/silc-1.1.18/etc/silcd.conf
+```
+
+Try these commands if silcd fails to start:
+
+```
+$ sudo mkdir /opt/silc-1.1.18/var/
+$ sudo chown nobody:nogroup /opt/silc-1.1.18/var/
+$ sudo chmod 600 /opt/silc-1.1.18/etc/*prv*
+$ sudo chmod 600 /opt/silc-1.1.18/etc/silcd.prv
+```
+
+## Run the client
+
+$ silc
+
+You should be all set!
