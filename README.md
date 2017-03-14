@@ -96,4 +96,4 @@ $ sudo chmod 600 /opt/silc-1.1.18/etc/silcd.prv
 
 $ silc
 
-You should be all set!
+You should be all set! Note it will ask you for a passphrase. This is for your client's private key, not for the server!
