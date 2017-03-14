@@ -89,7 +89,6 @@ Try these commands if silcd fails to start:
 ```
 $ sudo mkdir /opt/silc-1.1.18/var/
 $ sudo chown nobody:nogroup /opt/silc-1.1.18/var/
-$ sudo chmod 600 /opt/silc-1.1.18/etc/*prv*
 $ sudo chmod 600 /opt/silc-1.1.18/etc/silcd.prv
 ```
 
