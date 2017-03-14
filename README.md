@@ -49,4 +49,26 @@ $ ./configure --prefix=/opt/silc-1.1.8 --disable-ipv6 \
 $ make -j
 $ sudo make install
 
+## Configure the silc client
+
+```
+$ cd
+$ mkdir -p .silc/
+$ cp silc-client-conf/silc.conf ~/.silc
+```
+
+Make edits to ~/.silc/silc.conf where there are 'XXXXXX'
+
+You can also feel free to change the encryption settings, but this is meant for a loopback only configuration
+
 ## Configure the silc server
+
+You'll find a default configuration in /opt/silc-1.1.18/etc/silcd.conf
+
+You can modify it, if you want to have your own private silc server on loopback you can use the file in silc-server-conf/ after replacing the values that have XXXX with your own
+
+You can also feel free to change the encryption settings, but this is meant for a loopback only configuration
+
+## Making an init script
+
+This is pretty boilerplate, I'm not including one
