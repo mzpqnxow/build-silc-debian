@@ -78,7 +78,7 @@ You can also feel free to change the encryption settings, but this is meant for 
 
 ## Making an init script
 
-This is pretty boilerplate, I'm not including one
+A very basic distribution/OS agnostic init script is in init.d
 
 ## Running for the first time
 
