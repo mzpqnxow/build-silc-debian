@@ -1,9 +1,13 @@
 # build-silc-debian
-Files and instructions for building a silc client and server on a modern Debian system
+Files and instructions for building a loopback only silc client and server on a modern Debian system
 
 ## The silc project is dead
 
-The silc project is dead and has been for quite some time, but some people prefer to use it. I am one of those people, and it has been a pain to build it. In fact, it is a pain just to find the tarballs to build. This is a guide and it also contains the tarballs to use to build. This guide is intended for a single server loopback only silc configuration- a "private" chat
+The silc project is dead and has been for quite some time, but some people prefer to use it. I am one of those people, and it has been a pain to build it. In fact, it is a pain just to find the tarballs to build. This is a guide and it also contains the tarballs to use to build. This guide is intended for a single server loopback only silc configuration- a "private" chat, even on localhost- it at least prevents simple tcpdump sniffing, which is better than nothing
+
+## The process
+
+The process is straightforward and simple, tracking down the silcd and silc client tarballs are not so simple. This should save you (or me) some time in the future
 
 ## Install Debian prerequisites
 
