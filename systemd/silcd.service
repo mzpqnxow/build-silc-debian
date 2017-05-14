@@ -1,0 +1,16 @@
+[Unit]
+Description=SILC Daemon
+After=network.target auditd.service
+
+[Service]
+EnvironmentFile=/etc/default/silcd
+ExecStart=/bin/sh -c "/opt/silc-1.1.18/sbin/silcd -f /opt/silc-1.1.18/etc/silcd.conf"
+Type=forking
+PIDFile = /opt/silc-1.1.18/var/silcd.pid
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+Alias=silcd.service
+

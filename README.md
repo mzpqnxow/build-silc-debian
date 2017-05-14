@@ -80,9 +80,9 @@ You can modify it, if you want to have your own private silc server on loopback 
 
 You can also feel free to change the encryption settings, but this is meant for a loopback only configuration
 
-## Making an init script
+## Systemd service file
 
-A very basic distribution/OS agnostic init script is in init.d
+A very basic distribution/OS agnostic init script is in systemd
 
 ## Running for the first time
 
